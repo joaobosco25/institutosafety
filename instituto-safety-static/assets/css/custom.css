@@ -1,0 +1,293 @@
+/* ===================================================
+   CSS CUSTOMIZADO - Instituto Safety
+   Ajustes e correções para o site estático
+   =================================================== */
+
+/* ---- HEADER / NAVBAR ---- */
+.elementor-69 {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Garantir que o header fique fixo no topo */
+.elementor-location-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+/* ---- MENU DE NAVEGAÇÃO ---- */
+.eael-simple-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.eael-simple-menu > li {
+    position: relative;
+}
+
+.eael-simple-menu > li > a {
+    display: block;
+    padding: 8px 12px;
+    color: #23262F;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+.eael-simple-menu > li > a:hover {
+    color: #0D9276;
+}
+
+/* Botão Contato no menu */
+.elementor-element-710ec45 .elementor-button {
+    font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 24px;
+    fill: #23262F;
+    color: #23262F;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0D9276;
+    border-radius: 50px;
+    padding: 12px 25px;
+    transition: all 0.3s;
+}
+
+.elementor-element-710ec45 .elementor-button:hover {
+    color: #FFFFFF;
+    background-color: #0D9276;
+}
+
+/* ---- HERO SLIDER ---- */
+.elementor-element-019b3e0 {
+    position: relative;
+}
+
+/* ---- SEÇÃO DE VANTAGENS ---- */
+.elementor-element-9d8ff0c {
+    padding: 60px 0;
+}
+
+/* ---- SEÇÃO SOBRE NÓS ---- */
+.elementor-element-a8ec789 {
+    padding: 60px 0;
+}
+
+/* ---- SEÇÃO NRs ---- */
+.elementor-element-ded125a {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+/* ---- SEÇÃO INSTRUTOR ---- */
+.elementor-element-72be869 {
+    padding: 60px 0;
+}
+
+/* ---- SEÇÃO TREINAMENTOS ---- */
+.elementor-element-21733a2 {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+/* ---- SEÇÃO CAPACITAÇÃO ---- */
+.elementor-element-408ef21 {
+    padding: 60px 0;
+}
+
+/* ---- SEÇÃO CTA ---- */
+.elementor-element-e6739f7 {
+    padding: 60px 0;
+}
+
+/* ---- FOOTER ---- */
+.elementor-74 {
+    background-color: #fff;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* ---- BOTÕES GERAIS ---- */
+.elementor-button-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* ---- IMAGENS ---- */
+.elementor-widget-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---- MOBILE MENU ---- */
+.eael-simple-menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid #0D9276;
+    border-radius: 4px;
+    color: #0D9276;
+    font-size: 14px;
+    align-items: center;
+    gap: 8px;
+}
+
+.eael-simple-menu-toggle-text {
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+}
+
+/* ---- HAMBURGER MENU MOBILE ---- */
+@media (max-width: 1024px) {
+    .eael-hamburger--tablet .eael-simple-menu-horizontal {
+        display: none;
+    }
+    
+    .eael-simple-menu-toggle {
+        display: flex;
+    }
+    
+    .eael-simple-menu-container.eael-simple-menu-hamburger .eael-simple-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 9999;
+        padding: 10px 0;
+    }
+    
+    .eael-simple-menu-container.eael-simple-menu-hamburger .eael-simple-menu.open {
+        display: flex;
+    }
+    
+    .eael-simple-menu-container.eael-simple-menu-hamburger .eael-simple-menu > li > a {
+        padding: 12px 20px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+}
+
+@media (max-width: 767px) {
+    .eael-simple-menu-container.eael-simple-menu-hamburger {
+        min-height: 50px;
+    }
+}
+
+/* ---- ANIMAÇÕES ---- */
+.elementor-invisible {
+    visibility: hidden;
+}
+
+.elementor-animation-shrink {
+    transition: transform 0.3s;
+}
+
+.elementor-animation-shrink:hover {
+    transform: scale(0.9);
+}
+
+/* ---- YOUTUBE EMBED ---- */
+.elementor-video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ---- CORREÇÃO PARA IMAGENS LAZY LOAD ---- */
+img[src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="] {
+    opacity: 0;
+}
+
+/* ---- SWIPER SLIDER ---- */
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    opacity: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+/* ---- CORREÇÕES ESPECÍFICAS DO ELEMENTOR ---- */
+.elementor-section-full_width > .elementor-container {
+    max-width: 100%;
+}
+
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+    padding: 10px;
+}
+
+/* Garantir que o conteúdo do elementor seja visível */
+.elementor-widget-container {
+    transition: background 0.3s;
+}
+
+/* ---- LINKS DO FOOTER ---- */
+.elementor-74 a {
+    color: #54595F;
+    transition: color 0.3s;
+}
+
+.elementor-74 a:hover {
+    color: #0D9276;
+}
+
+/* ---- BOTÃO WHATSAPP / CONTATO ---- */
+a[href*="whatsapp"],
+a[href*="api.whatsapp"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ---- CORREÇÃO PARA IMAGENS DO INSTRUTOR ---- */
+.elementor-element img[src*="Mauricio"] {
+    border-radius: 8px;
+}
+
+/* ---- RESPONSIVIDADE GERAL ---- */
+@media (max-width: 768px) {
+    .elementor-container {
+        flex-direction: column;
+    }
+    
+    .elementor-col-33,
+    .elementor-col-50,
+    .elementor-col-25,
+    .elementor-col-66 {
+        width: 100%;
+    }
+    
+    .elementor-element-populated {
+        padding: 10px 15px;
+    }
+}
